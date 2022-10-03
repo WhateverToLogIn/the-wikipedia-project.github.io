@@ -23,9 +23,6 @@ header{
     height: 90px;
     gap: 10px;
 }
-.header--elements h2{
-    width: 150px;
-}
 .wiki--image{
     width: 50px;
     height: 45px;
