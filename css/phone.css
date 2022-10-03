@@ -12,7 +12,7 @@ header{
     width: 100%;
 }
 .header--container{
-    width: auto;
+    width: 90%;
     height: auto;
     position: relative;
 }
@@ -24,8 +24,8 @@ header{
     gap: 10px;
 }
 .wiki--image{
-    width: 50px;
-    height: 45px;
+    width: 55px;
+    height: 50px;
 }
 h2 .w{
     font-size: 3.2rem;
@@ -37,6 +37,11 @@ h2 .ikipedia{
 }
 h2 .a{
     font-size: 3.2rem;
+}
+h2 .wiki__subtitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    font-weight: 300;
 }
 main{
     width: 100%;
