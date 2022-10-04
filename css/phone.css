@@ -1,3 +1,8 @@
+:root{
+    --wiki-gray: #a2a9b1;
+    --text-gray: #54595d;
+    --text-blue: #36c;
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +12,21 @@
 html{
     font-size: 62.5%;
 }
+hr{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 35px;
+    height: 0;
+    clear: both;
+    border-bottom: 1px solid #c8ccd1;
+}
 header{
     height: 90px;
     width: 100%;
 }
 .header--container{
     width: 90%;
+    margin: auto;
     height: auto;
     position: relative;
 }
@@ -55,7 +69,7 @@ main .nav-search{
 .nav-search .nav__bar{
     width: 90%;
     height: 40px;
-    border: 1.5px solid #72777d;
+    border: 1.5px solid  var(--wiki-gray);
     border-radius: 2px;
     display: flex;
     position: relative;
@@ -73,7 +87,7 @@ main .nav-search{
     position: absolute;
     width: 49px;
     height: 40px;
-    background-color: #36c;
+    background-color: var(--text-blue);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +119,7 @@ main .nav-search{
     font-size: 1.4rem;
     margin-top: 3px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #3366cc;
+    color: var(--text-blue);
 }
 .box__languages .language__subtitle{
     font-size: 1.3rem;
@@ -124,13 +138,45 @@ main .nav-search{
     gap: 10px;
     justify-content: center;
     align-items: center;
-    border: 1px solid #a2a9b1;
+    border: 1px solid var(--wiki-gray);
     border-radius: 2px;
 }
 .languages--button-container a{
-    color: #3366cc;
+    color: var(--text-blue);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 1.4rem;
     padding: 8px 0;
+}
+footer{
+    width: 100%;
+    height: 939px;
+}
+footer .footer--side-bar{
+    width: 300px;
+    height: 166px;
+    margin: 15px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .footer--side-bar .wiki--footer-img{
+    height: 35px;
+    width: 35px;
+    background: url("../assets/social.svg") center/cover no-repeat;
+}
+.footer--text-container{
+    margin-top: 13px;
+}
+.footer--text-container p{
+    text-align: center;
+    line-height: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+}
+.footer--text-container .foundation__text{
+    color: var(--text-gray);
+}
+.footer--text-container .support__text{
+    color: var(--text-blue);
 }
